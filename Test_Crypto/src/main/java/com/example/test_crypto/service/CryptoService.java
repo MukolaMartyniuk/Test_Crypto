@@ -69,7 +69,7 @@ public class CryptoService {
     }
 
     //Returns a sorted list of the given elements
-    public List<String> getSelectPage(String currencyName, String pageNumber, String pageSize){
+    public List<String> getSelectPage(String currencyName, String pageNumber, String pageSize) {
         List<String> page = new ArrayList<>();
         List<CryptoBalanceTrade> listPages;
         listPages = switchCrypto(currencyName);
@@ -80,12 +80,13 @@ public class CryptoService {
         return page;
     }
 
-    public void sortList(List<CryptoBalanceTrade> list){
+    //Sorts the list
+    public void sortList(List<CryptoBalanceTrade> list) {
         list.sort(Comparator.comparing(CryptoBalanceTrade::getPrice));
     }
 
-    //Sorts the list
-    public List<CryptoBalanceTrade> switchCrypto(String symbol1){
+
+    public List<CryptoBalanceTrade> switchCrypto(String symbol1) {
         List<CryptoBalanceTrade> listPages = new ArrayList<>();
         switch (symbol1) {
             case "BTC" -> listPages = getAllCrypto("crypto_BTC");
@@ -100,7 +101,7 @@ public class CryptoService {
     }
 
     //Calculates the minimum price of cryptocurrency
-    public double getMinPrice(String symbol1){
+    public double getMinPrice(String symbol1) {
         List<CryptoBalanceTrade> listPages;
         listPages = switchCrypto(symbol1);
         sortList(listPages);
@@ -109,7 +110,7 @@ public class CryptoService {
     }
 
     //Calculates the maximum price of cryptocurrency
-    public double getMaxPrice(String symbol1){
+    public double getMaxPrice(String symbol1) {
         List<CryptoBalanceTrade> listPages;
         listPages = switchCrypto(symbol1);
         sortList(listPages);
@@ -118,7 +119,7 @@ public class CryptoService {
     }
 
     //Creates a CSV file
-    public void getFileCSV(){
+    public void getFileCSV() {
         StringBuilder stringBuilder = new StringBuilder();
         List<CryptoBalanceTrade> listPagesBTC;
         List<CryptoBalanceTrade> listPagesETH;

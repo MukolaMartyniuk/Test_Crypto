@@ -1,0 +1,17 @@
+
+`	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+f
+java:S1192="KDefine a constant instead of duplicating this literal "crypto_BTC" 4 times.(•¯ß«üÿÿÿÿ
+_
+java:S1192„"HDefine a constant instead of duplicating this literal "Name = " 3 times.(£ï™ô
+f
+java:S1192>"KDefine a constant instead of duplicating this literal "crypto_ETH" 4 times.(ìüİ³üÿÿÿÿ
+e
+java:S1192„"NDefine a constant instead of duplicating this literal ", minPrice = " 3 times.(£ï™ô
+a
+java:S1192?"KDefine a constant instead of duplicating this literal "crypto_XRP" 4 times.(Ï™ŸÄ
+e
+java:S1192…"NDefine a constant instead of duplicating this literal ", maxPrice = " 3 times.(öíã
+<	java:S131Z""Add a default case to this switch.(…µøÙûÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(ƒÒ
+O	java:S106‘"9Replace this use of System.out or System.err by a logger.(øÚÆ²
